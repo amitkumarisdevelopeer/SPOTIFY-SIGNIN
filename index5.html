@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+        integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="page1">
+            
+
+            <div id="left">
+                <i class="ri-home-4-line"></i>
+                <h3>Home</h3>
+                <i class="ri-search-line"></i>
+                <h3>Search</h3>
+            </div>
+            <div id="leftdown">
+                <i class="ri-article-fill"></i>
+                <h3>Your Library</h3>
+                <div class="small">
+                    <i class="ri-add-line"></i>
+                    <i class="ri-arrow-right-fill"></i>
+                </div>
+                <div class="artists">
+                    <button id="btn2">Artists</button>
+                    <h4 id="h1">Arijit Singh</h4>
+                    <h4 id="h2">Palak Muchhal</h4>
+                    <h4 id="h3">Shreya Ghoshal</h4>
+                    <div id="artist">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgSFRUYFRgYGBgYGBgYGBgYGBgYGBgZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHzQnJCs0NDQ0MTQ0NDQ0NDQxNDQ0NDQ2NDQ0NDQ0NDQ0NDQ0NDQ2NDQ0NDQ0MTQ0NDQ0NDQ0NP/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xABBEAACAQIEAwYDBgQDBwUAAAABAgADEQQSITEFIkEGE1FhcYEyQpEHUnKhscEUYoKSI6LwM3Oys9Hh8RYkNUNj/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgQBAwUABv/EAC8RAAICAQQABQMDBAMBAAAAAAABAhEDBBIhMRMiMkFRBWFxgaGxFTNSkULR8RT/2gAMAwEAAhEDEQA/ALnCgCWBqACUnfWjKmNM8s0eulglJ2EY6qDKHEjWEvVvIHF5I9ghsQMFkyicyx6icy9sdFFO2kAnIp20VpxwljxGrCKa3nASdDAIpOaUY6WkWApJkU5aH8M4c9dsq6AfEx2F9h6+U12C7O00+JQ/8zHS/TQED2jWHSZMqtcL5YnqfqGLBw+X8I8/MV56nRwSKt+6S/iqgA+lrxlTCD48qkdVsCN/H3PTp0jX9Mf+X7CX9bj/AI/ueYASSbjGcCoVScq92xJsVBXXoCp01mcx/A3pa3DL4ruPVf8AzF82iyY+e19hvB9Rw5uOn8MEw2MKnWWlLiIMoTO3iYzPDGfJpkxIPUSdHB6zM0mPjLbChusBxQllwKPuWiiMcTitExgNULJcjJwx0YzSUrDRxjIHeddpEZbGJbGJxjIzHkRpEvRahsUUUIIpWrRl5GseJRZo7UhXnbTlo9ROOYwiICSFIgkgjccVY9qekcqx7GcA5cg9oiJIVnMsigrGqIXREgRIZTW0gqnIeRI0olmCqLljYR7NLDs8Fzl2+VSB5s1xYewMuwQ3zUfkVy5HjxuXwajh2Hp0Kagahbm/i3UxmI4svyoW8ybW1vpM3xnitYsyUEuEOUu1rA9Qo6kfltFgDUdOdhckg6WK2E372qo+x5yePdLdJ22XlLj9tMjDxObN9L7Q3BcRVzZSATvca2mAr8Eztm7yqup5lYg38oRhaFagQxqGumxJAV089Pikxm12D4MX1wb2oVclGIBtYFhob68oO+wOkiZ8rZWB0Ci4F2O4Y6aW2PudJT4fjaKy0a3KrfA5JYX6Ak7HwBJv+UtcQCRkuuZhyOwupO4Xe42Og9pcnatFLTi6ZmeP8GC5qtPVd2UWIA+8tvl126SjpU7z0KlghzkkMWCq487WFwbm9jbU7TKjBZXZfA6em4mLr9OoNSj0/wCTe0GscoOEnyuvwRYbDbGWKpadppaPMzJOg5zcmciM7OGV9gHDI2khjCIUQkQsI0iTESIrLostTGERpEktGkQ9wSZHadjrRSdxNmcCxwWPCzoWVGk5EdpIiGOVIXQUSSuU6QOlInSHUOGsdbQzAYcM01GHwoAEKMXLoztRrHDhGQfhxHSCPQmzx1EATL4uwJnOO10ydPqJZALuZ2jh7m0mvOqSDcQWMucq4OvhQusjci0kqVC28HaQRG36iJ3lx2bdbVC+mUow8ipNvzNpSsJLw+oVYAbNyN+E7y7TT2ZEyNTi34XFBPGlxTnJh8qLoxYrmLkklgDfltcbjXXXTW4wuDanSVWJZ7XZutySbedtB7STG4rukzBWdj8KIpZvMhRvPP8AG4iu65qmHq8uiLUrFG3vn5SrAjSbKTaMGTSbLbiPDalQtTZnszB0dHZCgBJZMo0N/E/lLXB4Ooh5nZ02ytYlenxXuR6zPYftK6PTaohp2cBszZ1ZCQDzb3A1v5TT8Q4ugNg2U+fh+/T6zql0CpRsg4xRBpOo6LdfEEagg9DeP7C9o/4im2HrPeon3vnS+jA+I2I6b9dKjH8WUAlrEHQi/Xwmf4TTali6dQkUlrFkSoQSoa4VhboTqBfTmh4ZON2dngpU0et4hDzvfKChzNe1yDdSbEdAw9ztK6oSTmO5C/pJOHqwV6dZg9uRTbLdLEgNb6aSNm/1/wBIp9RyJ4V92FpYOMmcnI+0bMBux5M5OTs5JJOGNj40iSmSNIjLSTLOEQ0wkyMiMIjyYxmlkUw0NtFFnihUHyUIjxIg0dANFofmjkeQzoM4hxNDwuuBNCmNFt5g6dciEDHtJjNx6M7Po98rNJxLHi0zFasS0capacagd5Dk27ZZhwxxKiSjJ8sHpm0nVpwUux2SR1KcMo07yV8NeRaKfE2spSmskxFIKoYbkgfXSHPg4NjVsqId2dQPY5ifQKrMfIS3CrmkvkLJmW3s0GGrIjLRLor2BKlxnI6m19pUdo61XuX7g5K91ADKjG1xmAzKRtfpMjX4xmxb4ttVpGyDa5sVC38PjP8AR5zuN4sKyK2YoubMApIfLawXN8qi5NvKehtelGHlxONSb7KXF4ipiEcVsgdBfOqZHe5OjgWTS+llvpH1lyqlOm7tlTUsb7i+/TewA8INja92JLZgb6E3vbQXv1/6wFMWb2BtsD6Kb6zqKNxYVFdyBfQDYjymp4ZwxMTTosHa9ByGQWy57h9R76EeEyaVdM1ybk6De/p1A0+sP7OY84XGup1Vsoe/Rmta3ndre8CXld9F8PMvk9LxxCMvNrqWUeNgAPTeRiqIDUVnYuRqTfTYeAE6t5h6nN4sr9l0auPCox+/uW6NOGCUXhGaKOILjTOmK0V50CRTIFaPCTqiTWkMCUgZlg9Qwt4LWEOL5DgwVjGyQrGkRmNDKY2KKKESZ1GkqmDKCN9JMsoqjTaJDGFomaNvOISJUj5ErSUGcC0PptY3hJxGkFnVE4rlFPlk6G8Lw9O5g1FJa4VJDdIVzSpB2HpQpacZREJUzo0Zc5OyI0B4TIdtK5oLnFszLkpeTOb1HI8lVQPVvGbR6gUFibAAknyGpnlPavi6VcWpqErSTIhFrm55nuPSwPqY/ooeZy+P5K023TAuL8PK4aiqhjUqMzFRckqy5hp4hUBPqZlHrMvLcjpvtNtX7Qd3jlrMt0RMoN9g9szgegtaV2N4N/EXxdBGyOzEKbZhZiGv7jpNKMnF01+pGdKduL6Ms9Qk38v3iVjudZb/APp+pe2U+cPocCckXViN9Bc7fQS7chLawLgTguoOuuw8ugEu0wluIZnUlHKtfp8N1uRvZ1EueB9mWUhiMo0uPmJ8CbaSx7T8OZaXeUrZ6fNa2jKNSP3i2WTfX4HdNGP/ACLk2tIGWB8BxrV6C1GRlJGoIIv5rfcGWBWYU4OEnFmjFrtEIMRqzrCQNBZakmTCuYSjwAQqlBBnFIsKOsnIg+HhJgyEpdkTiC1RDGEGqCDHsODBCIxhJHEjMaixmLI7RSTLOQrCsqeMhe8OWAXkPeE6mSCDJ2zUhDZFRfsPJjYo4QQhKZKpkQkiTgZEknpiRqkKo05xROSSCKKywomCIsnWQxHJyWVF5N3krVqgC5IAG5OgHrM/xntvRpHJSIrPa/KeRfxMNz5D8oWPFObqKsSmlHlmm4hiHFN2phWcKSofNlJ88oJPoBPIuJcOIGau1y7XXLmszFrvmLKCu46dfKRcT7Q4mvdmqOo3CKSqgeg395X8LrOz3Ys4UFiGJI5eZRrtdso95t6bA8UNr7u7Fd8d/HK6oN47jlYFGRFYE5Slwcq3RhvYjQ+c9I4Z3OGYYR8qo3PhanyVabgNox0zgk3E8wxmUOpuc6HQkXF1sRcdZ65wTBivhEeitKrQfV8JXuUpVL2cUagBamM1yFIIF9LRrbuXIvkk4S46LB8Ch10tHU8IijRRrKjF9m8it3OHxuHYDlFLEJVpXv8AdZy1vYSlfDY3bNjrj/8AA/rkgPHXuHjamrtL8ujb3VBckKBuSQAPW8yeP40uJqDCYYl1J/xKg+HKN1Q9b7X89ICOy2Mrnmo16nniaqog9Uvm/wAs1nAOzrYW/eMjOQLCmpVEGvKCdWJ6nTppAlGldFqlGHum/hcktOgVUAIbAWAt4TO9r+NHDIAq873C32W1rtbruPrNsdNZ4z234j3uKcXuE5FH4fjP9xb6CUxwRnLzKyXqHFcDMF2xxCE5z31+hAUj8JUTaYDHrXQVEuAdwwsynqCJ5SoN7wmhiXQ5kYqfEEiTn0UJry8Msw6txfm5R6sphuHS88/4L2pcMFr8y/fAsw8zbcfnPTeD5WUMpDA6gg3B95k5tPPE6fXyOTzxlHciWjQIkzJLAILRj05TLCxF5rfJXMIPVEsKlOA4gSpRafJdCVgbxlpLactLUxtMitOx+SKTuJ3GYwWGuJ3EUgsfh6mURlZ7zjVuW77EE7ecIinFh2T0VkAheGGs4CbpB1GlDEpxtFdIQBOM2c22dVZ0iJRKvtDxUYemSPja4Qfq3tJhBzkoxKWym7ZcTAQ0FbU/Hbwt8J+t7TBIgHSGmqWNQMbn4rnqev6wQCeh0mFY40ZWsnclXQRZFVWZt7k26DNlAtbfS8LpYZERXS57wZ9fuBgRp0uyj+0SoroCNr+ENxWHVCVAClCiXG5ZAC9/HmYj0QDpGZdC2N838cla78xB1I39TqfznpX2RcWRalXDOou4DKdLnVQyt42BBHhZvEzzmvTvzDfrDOz2P7mulY7K4zeaMMjj3UtOoBu0fSGHcq3dtqPlPl4Q6Bsgdd/Ag/oZUdo+I2VcMGyNUDNVYb08OgJqvfoSAVU+LX6Gcyoo+1PbJqYC0HVWdslFQA1Srdsve3a6pTzaLcEvuLDWXlANlXMxZ7DMxsCzAAEmwHh4Tyvs5fHcR79hZUJcKNkVbJRQeGUZf7DPVxFs0uaGMca5AuNY4UKD1m+RGf8AtBIG/U2HvPBBdru2rNqSd7nUn6z1f7S8blwwog61XAI/lQh29dcg/qM8qcyzDHizpM4onGM719JEwsZbRCZ0NrPSvss4lmz4UnUc6emgcD3yn3nmYlv2c4kcNiKdcbIwzAdUOjj6ExbPiU4tMujNn0GtOdZZJTcMAwNwQCD4g6gyOq+l5mzxqKITbYJXMrK7AybF4jpK2vUAsNb21B6eEz5Jytr2H8MGdM5eDviJA2JgUPLHJlheKBriJyCR4bM4jx5MEVoQhlzVG1KNHSIBjMaEIvDyYFjcMHEKFX5uiOa4J8NVzC8Nw9WxmaRaimy7QjCd5nFzoeksljXdgS5VNG8wuoENSjeAcNOgl1hou+zGztxbBcUUpI1R2CqouSf9bzyXjvFTiKzPflJCoPBAdB6nc+s132pYshKdAGwa7sL72sBfy3nmJYibGh06Ud77ZnZM7XFlhh3u7fzAr+/7RlobhcFlwqYkjV8QFB6hFUj83v8AQQbELZiPAmasYuDp+6sUyS3xv7kuApg1FLfCl3f8KAuR72t7yLFMxIzfF8TebMSzf5maGYNLUnc/O60h+EXqVP8AKir/AFwBySSx1uZElckQuMb+7r/REdSF9T7CJ6eseF1v5eHjrHQio947JcSz4DD1mNyECN4syEofflvKn7QMQlDB1WAtWxDLTLG98pBYqCdgEzCw6sfGA/ZtiC+BqURqyVrD0dQ36hpWfa5jy1WjhxqUp5io6vUNgPWyj+6QwfcI+y7h+Sg9cjWo9h+BLqP8xeboGV/BMCKFCnRHyIqk+LAcx92zH3k+JrBEZm2AJPjYC5sOugMSk90hrpHnv2hYSs7iuEvSRcoYEbsSWNvYDxGXXTWYUDrNlx7tQ+OVKSU20DFURGvmdSjM2pN7MwsNLm9zaZjFYF6ZAdcpN9LqTp4gG679Y3GNKii7AryOtFiGsZoeC8AfGUlSmAGz5s5+EKbK1z5WvaRKaVWW48bndeyszlNC2gBNhc2F7AddJc8C4BVxOfugDkAJubXJ2Uec9B7M9kaWG7xarmoWUK4yFENjchRfM3hNThUAKrTC0qYBAXIFC7WIA67/AJSHImKpEOAwZXC08JXcFwiqxR2Bsvw8wsRoLedp3HV6WHVWeoVVmC6sST0JsdSPSD4vG1qpyYNdNc2JrKVRTr8CEZnPnYLrvM1xzstkCVKtd8RWJBLObILg3CoBYLeKzjFxfFfkux9pX2XuOr5ea99MykdQdVNjtfpK9ajWuxzMdST4mV+CwxRFpu5cKQRfXKRtYnW3l5QlnmNlcVxF8G3gxNR8y5HO8jYxXnUW5i7YyuB6mKFLhooNFe+JkKR1hWaAq9o414y4mpdhRqxme8GzySnO20cghVkbDmHtCUWNKXaCgWy+wFWwjePcXNHDuyMFciynS4J0uB1tB0uov5TzLi1SozszMzXY9dB5CNaPTrLO30jC181jV1djamId9XZme5LMxJLEne530tIqdFncIilmY2AH+tpZ9meHnE1sjaqql31sSBoFB6XPX1mmcUWZsLTorhqouGIIJdQL5c51NxrPUYNM5JeyPMZ89Ou2EY3guXArRU52VA9xszA52y/nMjUcOA/iBf162E3mL4qlDDoXK50WwW+ptoPymM4DSV0r1XRWCsioGvlDuSxAsRsin6iXanDbVd9AabNtjJS6fP6knEhkp0qXVUDt+Ouc/wCVNUH9UrFlljcQtao3eZUI1umhdgEXW9xYKANPuwPHYU0nNMkPYKQy6izKGH6xNxqTsak7ivx/JCT/AKvIwZ36fSNtOAR6B9kOMy4mrSJ+NFcDzRiD+VT8oNxOmcVxx1tdKThm8looCL+RfKP6pleAY2tTxCthyBUyuq32N0On1A+k2P2b03rVsVjKti71MhIFhmBzvYHbUp9JXke2LYUI3I9ALWFpmO3XFHo4cCm5R3cKrKbEAHM5B9Ft/XNM/hPKO2Nati8cuEw6l2RcoUW1ZhndiTYABcgufuxXGrYxMlw3D+I4pAwNR0OzM6ohGx0uMw36HrIcf2OxdGxKI69WRxlT8Za1h57Tb9iuA4qnQKYivbIzKiLZgg3IZiNdSdOkfguHVKmIqL3r1VpmxdyAqs6HkRVsFKqykkC/N8Q2lzyO6I8OKjfuUXY7sRh6rN/E3qsFzBFZlRdd9LM3qbA9Ad5uMHg0pJ3VJAiD7oyj8t5k+CcYXBYtlrhkUB6Z5HYs+jAqoBuCBe4ufEmWuI7VCzulFyqhmuSi3A1uATce8GUkq3MLHjnK3FOkXhyqcpYFtdL3Om+nSRYrFshUhECXId3qKpXluDlO+uk8xx/buq7f4dKnRNyM+UPUIPi1rfkZVdqadRa4SpXasGRHVyWClXF8yo3w9enSWHJWeicQ7aUF5Vz13+VaK3TQ6nPax2toTvKnHcRxmIZHqUxRpnmUOCXYajTaw9hKvA4mg1aktJArrSqJUK3yMVYZClydSBcnTeXNVmZ3qNYl1RTv8l9dTpcWGlthM/V59txfdcGhpNOnU0uL5Oq0dliRIXQo3mKa8pKILljkNjLQ4IWgb0LGQVrLGXBMuKikXdxTgNsTGkSJjJWaQsY2kao9TC6AgamFUWgy6JRZUFvHrT5o3DvBeNVOTKDbNuQbG3h7yIQ3yURfJJxtgPH+NEt3dK+VdGZb6nrrtpAeAYHv6jCougTOFcMqub2Av4ekr8U3QaAdOk2eD7RUqtNaTkI+UKMw5CQNs3Qe4M9PoNPjhV/+njvqWpyS4icwGCRC7YZO7fTvKLk5ha9sjX+E9DqD5TOdpKf+IKwuBUuwvoyuhCsPIgiW3FK7017zW6EBGvzoW+Vjs9NvP9ZmMdjzVcsxN97E3Fzvl8puNKMaMfHFydkONxLOBnsSPm6kfzeJ85qWpjD4WnTYZXWm9dx17yryoGHiEC/SU/CTQFfDhyXzPz35UQ7rqRYgG19ZY9pGFR3qZ0OZxYCohbKNAAoPgBEnlUm2vZfuNSx0op+7/Yy1VbnXoLfufzMacRbdr7DU+GgEsMJwt8RUWjTGZzqdbADqzHoJ6v2c7JYfCqCEV6luaoygm/UJf4RMjJqI4++x7w3Juujx5MQL66GOa5BKm/6z2HtVwOliKRzIpddVawDDyv4TyjE8LCglCy2OoJvIhqoz74ClppVceQThOM7rEUnt8LrodNzlufS9/ae19nuEfwyNTuGJq1XJAtfO5IO5+QJPGOA8NqV6i2RmRXBdraWU3ZQfmaw2FzPXcZxh3JVOUFWNweYHK2mexC6rsuZvSFluSSQOGDTtlljsaicpPMbWUb2Jtdj8o8yR7zH9iscBWqVMl6gfna13bOxDgE8xsellGg3klaqqqjNzsGe3gGGU3AJOuvxHM3mJTcI41TwXFKhdv8N2ZCQQVTOwIZvIEa+RgKDRf5adnqOM4gU5lGhNrkdbeG56TMYDtmiYuoj3Wm4Q5rfC6qAWPkQAPYSfjuEbEKRhKiBXYGqt+YoSC2Qk2sdyul7wl+A03p65HYDQsoX+k+HpIoGk0Mr9qMNXY01OYNoTY2va19tDMwmP/wAR8Mi52DML/fANjf00vO8c45/D0jTRFQglVHL/AHDKbAdZh8TjSMhDHPzMW68wUC/9t/eBPHvdDWHP4Kfuvg5xTDmlVenuFawI8LA29r2gz1cxuTc+csTxF3UI7M6g5gCbna2jHX2glVButvcRqKdciU3cm49fAf2ZfLiU87j6qRPQBRJ6TzDh+MNOojlRysDcEkb66dNLz2rA01KgjqLj3mN9Tg1JS+xo6LPtxtfcp1SH4QSevhdZJh6EzBueZSiSnaCVKWsuEoC0Fr0xeS4tcisMnPAD3MUOyCKDYfiM8qLRl5y8Ufo32yRBCaRknC8KHaxNodjeHhBmECRCnFPa+yCm9oBxetsCbdT6f6EJzyox7lqq0/c+g1l2kjeS/go1stuPjtuv9lTVdiSQCBBnc33Jmv4JwR8U7KvJTQ2d7XJb7qA6X8T0l/j/ALNqTqO7quj/AM4DqfOwsRNqOQ8rmwpSaTsx2G4jTbCPRquQ4JCaEkqMrBTbpmEn7N9lVxqGp32TI2VkVbtsCDmJtqPLpCsf9nWKQXQ06g8iVP0YW/OQ9nMdW4dW7vEo9KlUvmummbSzhvmAA2B2Mtzaucse2L/7KMWBRlbRsqHZegypRamrIhNr3uL6sb9SbTM9r8KtWpUFJEAopcEWUKqAX2+lvSehtikFBsQrBkyEqwNwbjcGY/s09JxUasyMzsoyNqSgYMxK9Rcj6RbBccVvtsvyPxMn2SI/szwOZqmJOUEDILdQxD6jpa35z0PNMP2PdUqhFGQHC086hSoNUVHBuLfFlK+1pocZxlEuEs5W9zeyKQpazP1Onwrc+UV1EJPK0uQsUoqKssMURkfMQBlNyTYDTxmEwvCVBHeaklhlsddb3A0zD+YkL5mWWPxzMWu22cXIAC2ykWU3VD5td/ACVr4vmJGwqU2ZjscylrnNvsNW9gJZhwV2FLNXCCKTqAoFlGRwFW2o59CwAuNtFyr5tAsRxVKQp1HYKlipGlyAzXUKBrow0GkzXEO0ipZaXO6M3OTdbG1uvOdD5azMvUao12YsT1PT0HQRqkine2X2N43UdBTTkpgkgj4zcAG5HwjQaD6yiqYfQlT7eMLVwBbYCBvil6Anz2h1SKJO+wnhfHKlHRXItsbnl9PLyljje1terlDueX7vKT6kbzNBtb+d5JUp2swOh/KBtTCWSSLDH8SaooTYAk+p84KjGdTDFgDdR9f2ju7y7kexkqILm32T0W6whH01gyNHK2hhhRlySOOYEdbA/sZ7VwtsiqpOyqPcACeR8Awve10Ui6qczei6/raemJXmN9TmnJRXsaujwuUW/Zl1UxAMdSrATD8Z7TLR0Bu3lM2/barfQRKGlyTVpDE4Y4eWUkmexHGaaQZsRczzrhPa8uQrXBM1VPF3AMryYp43UgoaeLW6LtF93wilJ/FRSqgv/nZgFeTIYCjg7GE03mlKNGlCe7ks8LUKHMDC8TjS4AMAw5vCGS0oaL1CLdjcsquIKVYVFFyoII8QR+2ktGe0rq1TmlmGThK0V6iEZx2s9A7ClP4KjktqpL/jJJa/ne81tIgzzbsiHRmdWshtnS2hb76n5T4+M22ExQIv+c0o5VPo81m00sbaZcVVBFj1lHxjh61ENGvT72k3UfEh6MvUEeULxDU6q5gxDDYjcHzHWZnFdpatG616dSko07wDMh8Of5b+BljF0jM8a7KY+gmTCO9XDli+VCAwJt8Sn4tv+0D7JP8A+6okGqlRagSoGtYkg5rBRddtQdPPxv8AgvFcuIeq+K/wmWwTMxJbSz3O3Xbxgtd8Gcbh3o1Gas2JQuLkhgb3LflJjK+EyXjceWuwXi3G6qYlB3rkGnSBVmupDrzAjVm8bCwuLkw3FYq3KurC6i2luSsMqldFHLslvMzKdrSz4tEQczpQVQOpI0HmLnbabnCdnKtVy1Qmgma9gVNZ7PUYcwuqCzkdT6SzJKMXchSMZS4RkanFs2IFArcsQEswVc1emgA10UXI19ZneM8TrOzU3OVUIQopOW6cgJPzHSeq9puy1JqVCnSRaWSugUqNSHNnzHck2Bve9xPOe0PAqqV6rBc47xySt7i7G+m/WBHMpIu8F9IztMi/MDby8ZJXoFFRidXUsB4LfKCfWxki0bXuD9JHjahJUH5UVfpc/vDjJNkZcUoRTZA7k9TGmImclgvQoThiCCh9vWDTqtbWcdRMK3Ro9Evtb6wZjfWEYPDOzBUUkna3/eQ030HDbu8y4DqWGuQC1vMS2fhasgFIMzgi5JGU/sI/gvB6iuWqoMoRvis3MdrDxl2rW0Gg8ojqsuXC1fub+i02DNB0vsR9nsAaKsWtmYi9jcADYX9zCON8VNNCRuYlqyl7RvmWwmbG8uZSkaLxRw4Woey4KKhRNZizHczQYfhNJACRc2mdwNUqJYLi6jaKJruqaPNpy3bu2O4nSCnOultpccA4sWGVjqJnHpuWs/5y04LRsximeMfDpmzpJynK1wvdGu76KB5opk7TU2o8/wAG5vufrL3DxRTa1PZk/T/Siywm8sKu0UUzpdmvEAqQCrvFFDgRPo2PZH4G/F+wl7gd6n4/2iil+n9TMbW9sPpfGJ3jSBsO2YBtV3F/mEUUfZkLs8ixaha5VRlGug0H0EE4F/8AJ0P98kUUrxet/gdzf2I/k02HQHiOFuAfg/5Jnpa7zkUjWdoT0/pIOJf/AFf7+l/xTG8Q/wBvU/Gf1iilMfSxjF6yoyi7aTC8d/27+q/8KzsUZwAa30L8leZyKKOGchTkUU44kpy74X8afiH6xRQoepEPo3r7H0P6SqaKKJ/WvXH8HoPonpl+UIQHHbGdimRj9Rtz9LMyNz6y34N8UUU05dHn8Prf6knF95PwTrFFF83oHdJ/dZcxRRTNNQ//2Q==" alt="">
+                    </div>
+                    <div id="artist">
+                        <img src="https://www.bollywoodhungama.com/wp-content/uploads/2016/03/Palak-Muchhal-Image.jpg" alt="">      
+                    </div>
+                    <div id="artist">
+                        <img src="https://static.toiimg.com/thumb/81450030.cms?width=400&height=300&resizemode=4&imgsize=135105" alt="">
+                        <h4>Palak Muchhal</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="rec">
+
+                    <div id="i">
+                        <i class="ri-arrow-right-fill"></i>
+                        <i class="ri-arrow-left-fill"></i>
+                    </div>
+                    <marquee behavior="" direction="">
+                        <h1>This site has been Designed by <span>AMIT KUMAR</span></h1>
+                    </marquee>
+                    <div id="right-clm">
+                        <button>Explore Premium</button>
+                        <button id="btn">Install App</button>
+                        <i class="ri-notification-3-fill"></i>
+                        <i class="ri-user-fill"></i>
+                    </div>
+
+                </div>
+                <div class="audio1">
+                    <h4>Popular Albums</h4>
+                    <div id="s1">
+                        <img src="https://c.saavncdn.com/430/Aashiqui-2-Hindi-2013-500x500.jpg" alt="">
+                        <h3>Tum hi ho</h3>
+                        <audio controls src="./Tum Hi Ho.mp3"></audio>
+                    </div>
+                    <div id="s1">
+                        <img src="https://c.saavncdn.com/596/Chandni-Hindi-2023-20230729195544-500x500.jpg" alt="">
+                        <h3>Chandni</h3>
+                        <audio controls src="./Chandni Sachet Tandon 128 Kbps.mp3"></audio>
+                    </div>
+                    <div id="s1">
+                        <img src="https://a10.gaanacdn.com/gn_img/song/21GWwR3pkg/GWwBLwrD3p/size_l_1629370808.jpeg"
+                            alt="">
+                        <h3 style="font-size: 16px; width: 100%; position: absolute; left: 6%;">Kabhie-Tumhe-Yaad</h3>
+                        <audio controls src="./Kabhi-Tumhe-Yaad-Meri-Aaye(PagalWorld).mp3"></audio>
+                    </div>
+                    <div id="s1">
+                        <img src="https://m.timesofindia.com/photo/102896131/size-144723/102896131.jpg" alt=""
+                            height="100px" width="150px">
+                        <h3 style="position: absolute; left: 15%;">Chal Tere ishq</h3>
+                        <audio controls src="./Chal Tere Ishq Mein Male Version Gadar 2 128 Kbps.mp3"></audio>
+                    </div>
+                    <div id="s1">
+                        <img src="https://pagalnew.com/coverimages/Kaun-Tujhe-M.S.-Dhoni---The-Untold-Story-500-500.jpg"
+                            alt="">
+                        <h3>Kaun Tujhe</h3>
+                        <audio controls src="./Kaun Tujhe M.s. Dhoni The Untold Story 128 Kbps.mp3"></audio>
+                    </div>
+
+                </div>
+                <div class="audio2">
+                    <h4>Arijit Singh hits!</h4>
+                    <div class="s2">
+                        <img src="https://pagalworldi.com/siteuploads/thumb/sft29/14055_4.jpg">
+                        <h3 style="position: absolute; left: 15%;">Apna Bana le</h3>
+                        <audio controls src="./Apna-Bana-Le(PagalWorld).mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://pagalworldi.com/siteuploads/thumb/sft1/177_4.jpg" alt="">
+                        <h3 style="position: absolute; left: 13%;">Chal Waha jaate</h3>
+                        <audio controls src="./Chal-Wahan-Jaate-Hain(PagalWorld).mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Muskurane.jpg" alt="">
+                        <h3 style="position: absolute; left: 19%;">Muskurane</h3>
+                        <audio controls src="./Muskurane-Ki-Wajah-Tum-Ho(PagalWorldl).mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+                        <h3 style="position: absolute; left: 25%;">Kesariya</h3>
+                        <audio controls src="./Kesariya(PagalWorld).mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://c.saavncdn.com/388/Dil-Jhoom-Vishal-Mishra-From-Gadar-2-Hindi-2023-20230918133729-500x500.jpg"
+                            alt="" height="100px" width="150px">
+                        <h3>Dil jhoom</h3>
+                        <audio controls src="./Dil-Jhoom(PagalWorlld.Com).mp3"></audio>
+                    </div>
+                </div>
+                <div class="audio2">
+                    <h4>Palak Muchhal hits!</h4>
+                    <div class="s2">
+                        <img src="https://timesofindia.indiatimes.com/photo/61287540.cms" width="150px">>
+                        <h3 style="position: absolute; left: 15%;">Kaabil hoon</h3>
+                        <audio controls src="./Kaabil Hoon Jubin Nautiyal 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://c.saavncdn.com/469/Hero-Hindi-2015-500x500.jpg" alt="">
+                        <h3 style="position: absolute; left: 25%;">O Khuda</h3>
+                        <audio controls src="./O Khuda Hero 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://c.saavncdn.com/659/Chahun-Main-Ya-Naa-Lofi-Mix-Hindi-2022-20220526151000-500x500.jpg"
+                            alt="">
+                        <h3 style="position: absolute; left: 15%;  font-size: 15px;">Chahun Main Ya Na</h3>
+                        <audio controls src="./Chahun Main Ya Naa Aashiqui 2 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTQ3ZTJkYjItNTRhOC00ZjQ2LTgxMzgtZjE3NDY0NTlhYjcxXkEyXkFqcGdeQXVyOTA3MTM0MTM@._V1_.jpg"
+                            alt="" width="150px">
+                        <h3 style="position: absolute; left: 16%; font-size: 15px; width: 200px;">Sanam Teri Kasam</h3>
+                        <audio controls src="./Sanam Teri Kasam Ankit Tiwari 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://im.rediff.com/movies/2015/nov/17sonam-kapoor.jpg" width="150px">
+                        <h3 style="position: absolute; left: 16%; font-size: 13px;">Prem Ratan Dhan Payo</h3>
+                        <audio controls src="./Prem Ratan Dhan Payo Palak Muchhal 128 Kbps.mp3"></audio>
+                    </div>
+                    
+                </div>
+                <div class="audio2">
+                    <h4>Tulsi Kumar hits!</h4>
+                    <div class="s2">
+                        <img src="https://c.saavncdn.com/215/Mere-Papa-Hindi-2016-500x500.jpg">
+                        <h3 style="position: absolute; left: 15%;">Mere Papa</h3>
+                        <audio controls src="./Mere-Papa(PaglaSongs).mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://i1.sndcdn.com/artworks-000575101799-retbj9-t500x500.jpg" alt="">
+                        <h3 style="position: absolute; left: 13%;">Tera Ban Jaungi</h3>
+                        <audio controls src="./Tera Ban Jaunga Kabir Singh 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://c.saavncdn.com/810/O-Saki-Saki-From-Batla-House--Hindi-2019-20190715121320-500x500.jpg" alt="">
+                        <h3 style="position: absolute; left: 19%;">O Saki Saki</h3>
+                        <audio controls src="./O-Saki-Saki(PagalWorldl).mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://i1.sndcdn.com/artworks-000047374149-7f27ip-t500x500.jpg"
+                            alt="">
+                        <h3 style="position: absolute; left: 20%; font-size: 15px;">Hum Mar Jayenge</h3>
+                        <audio controls src="./Hum Mar Jayenge.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img  src="https://pagaliworld.com/siteuploads/thumb/sft19/9389_4.jpg"  alt="" height="100px" width="150px">
+                        <h3 style="font-size: 15px;">Mere Humsafar</h3>
+                        <audio controls src="./Mere-Humsafar-Mithoon(PaglaSongs).mp3"></audio>
+                    </div>
+                </div>
+                <div class="audio2">
+                    <h4>Shreya Ghoshal hits!</h4>
+                    <div class="s2">
+                        <img src="https://a10.gaanacdn.com/gn_img/albums/zLp36v3rGe/p36l8RaGbr/size_l.jpg" width="150px">>
+                        <h3 style="position: absolute; left: 15%;">Zilaale Miskin</h3>
+                        <audio controls src="./Zihaal e Miskin(PagalWorld.com.pe).mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://c.saavncdn.com/503/Baarish-Aayi-Hai-Hindi-2022-20220712053244-500x500.jpg" alt="">
+                        <h3 style="position: absolute; left: 25%;">Baarish</h3>
+                        <audio controls src="./Baarish Aayi Hai Stebin Ben 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_05xj-B0aPwYReZvL25xBGo9995wrkYMLpw&usqp=CAU" alt="">
+                        <h3 style="position: absolute; left: 25%;  font-size: 15px;">Hasi ban gye</h3>
+                        <audio controls src="./Hasi Female Version Hamari Adhuri Kahani Original Motion Picturetrack 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://a10.gaanacdn.com/images/albums/94/58994/crop_480x480_58994.jpg"  alt="" width="150px">
+                        <h3 style="position: absolute; left: 20%; font-size: 15px; width: 200px;">
+                                             Chikni Chameli </h3>
+                        <audio controls src="./Chikni Chameli Agneepath 128 Kbps.mp3"></audio>
+                    </div>
+                    <div class="s2">
+                        <img src="https://c.saavncdn.com/529/Oh-Sanam-Hindi-2021-20210405151910-500x500.jpg" width="150px">
+                        <h3 style="position: absolute; left: 30%; font-size: 13px;">OH Sanam</h3>
+                        <audio controls src="./128-Oh Sanam - Tony Kakkar 128 Kbps.mp3"></audio>
+                    </div>
+                    
+            </div>
+            <div class="audio2">
+                <h4>Tulsi Kumar hits!</h4>
+                <div class="s2">
+                    <img src="https://c.saavncdn.com/215/Mere-Papa-Hindi-2016-500x500.jpg">
+                    <h3 style="position: absolute; left: 15%;">Mere Papa</h3>
+                    <audio controls src="./Mere-Papa(PaglaSongs).mp3"></audio>
+                </div>
+                <div class="s2">
+                    <img src="https://i1.sndcdn.com/artworks-000575101799-retbj9-t500x500.jpg" alt="">
+                    <h3 style="position: absolute; left: 13%;">Tera Ban Jaungi</h3>
+                    <audio controls src="./Tera Ban Jaunga Kabir Singh 128 Kbps.mp3"></audio>
+                </div>
+                <div class="s2">
+                    <img src="https://c.saavncdn.com/810/O-Saki-Saki-From-Batla-House--Hindi-2019-20190715121320-500x500.jpg" alt="">
+                    <h3 style="position: absolute; left: 19%;">O Saki Saki</h3>
+                    <audio controls src="./O-Saki-Saki(PagalWorldl).mp3"></audio>
+                </div>
+                <div class="s2">
+                    <img src="https://i1.sndcdn.com/artworks-000047374149-7f27ip-t500x500.jpg"
+                        alt="">
+                    <h3 style="position: absolute; left: 20%; font-size: 15px;">Hum Mar Jayenge</h3>
+                    <audio controls src="./Hum Mar Jayenge.mp3"></audio>
+                </div>
+                <div class="s2">
+                    <img  src="https://pagaliworld.com/siteuploads/thumb/sft19/9389_4.jpg"  alt="" height="100px" width="150px">
+                    <h3 style="font-size: 15px;">Mere Humsafar</h3>
+                    <audio controls src="./Mere-Humsafar-Mithoon(PaglaSongs).mp3"></audio>
+                </div>
+            </div>
+            <div class="audio2">
+                <h4>Popular Artists</h4>
+                <div class="s2">
+                    <img src="https://college.berklee.edu/sites/default/files/styles/scale_to_480px_width/public/d7/bcm/IMG_2635.jpg?fv=4KqPRjsK&itok=I9192nOV" width="150px" style="border-radius: 50%;">
+                    <h3 style="position: absolute; left: 15%;">Shreya Ghoshal</h3>
+                    <!-- <audio controls src="./Zihaal e Miskin(PagalWorld.com.pe).mp3"></audio> -->
+                </div>
+                <div class="s2">
+                    <img style="border-radius: 50%; position: absolute; left: 5%;" src="https://dwz6kul9y5yls.cloudfront.net/youth/wp-content/uploads/2023/05/Palak-Muchhal-UJR_0849-scaled-1.jpg" alt="">
+                    <h3 style="position: absolute; left: 15%;">Palak Muchhal</h3>
+                    <!-- <audio controls src="./Baarish Aayi Hai Stebin Ben 128 Kbps.mp3"></audio> -->
+                </div>
+                <div class="s2">
+                    <img style="border-radius: 50%;" src="https://static.toiimg.com/thumb/msid-96026059,width-1280,resizemode-4/96026059.jpg" alt="">
+                    <h3 style="position: absolute; left: 20%;  font-size: 20px;">Arijit Singh</h3>
+                    <!-- <audio controls src="./Hasi Female Version Hamari Adhuri Kahani Original Motion Picturetrack 128 Kbps.mp3"></audio> -->
+                </div>
+                <div class="s2">
+                    <img src="https://images.hindustantimes.com/img/2022/12/02/550x309/Jubin_Nautiyal_1669970221220_1669970221525_1669970221525.jpeg"  alt="" width="150px" style="border-radius: 50%;">
+                    <h3 style="position: absolute; left: 20%; font-size: 20px; width: 200px;">
+                                         Jubin Nautiyal </h3>
+                    <!-- <audio controls src="./Chikni Chameli Agneepath 128 Kbps.mp3"></audio> -->
+                </div>
+                <div class="s2">
+                    <img style="border-radius: 50%;" src="https://static.toiimg.com/thumb/msid-74574087,width-400,resizemode-4/74574087.jpg" width="150px">
+                    <h3 style="position: absolute; left: 20%; font-size: 20px;">Armaan Malik</h3>
+                    <!-- <audio controls src="./128-Oh Sanam - Tony Kakkar 128 Kbps.mp3"></audio> -->
+                </div>
+                
+            </div>
+            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="./script4.js"></script>
+</body>
+
+</html>
